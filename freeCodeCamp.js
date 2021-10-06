@@ -91,3 +91,5 @@ function Dog1(name, color) {
 }
 
 let terrier = new Dog1('terrier', 'blue')
+
+// 12
