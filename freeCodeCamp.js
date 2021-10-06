@@ -84,3 +84,10 @@ function Dog() {
 let hound = new Dog();
 
 // 11
+function Dog1(name, color) {
+	this.name = name;
+	this.color = color;
+	this.numLegs = 4;
+}
+
+let terrier = new Dog1('terrier', 'blue')
