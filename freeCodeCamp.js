@@ -99,3 +99,5 @@ function House(numBedrooms) {
 let myHouse = new House(4);
 
 console.log(myHouse instanceof House);
+
+// 13
