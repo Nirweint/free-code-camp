@@ -93,3 +93,9 @@ function Dog1(name, color) {
 let terrier = new Dog1('terrier', 'blue')
 
 // 12
+function House(numBedrooms) {
+	this.numBedrooms = numBedrooms;
+}
+let myHouse = new House(4);
+
+console.log(myHouse instanceof House);
