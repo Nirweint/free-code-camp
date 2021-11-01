@@ -116,3 +116,38 @@ for (let property in canary) {
 }
 
 // 14
+function frankenSplice (arr1, arr2, n) {
+	let newArr = [...arr2];
+	newArr.splice(n,0,...arr1)
+	return newArr
+}
+
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1))
+
+// 15
+function bouncer(arr) {
+	let newArr = []
+	for(let i = 0; i < arr.length; i++) {
+		if (arr[i]) {
+			newArr.push(arr[i])
+		}
+	}
+	return newArr
+}
+
+bouncer([7, "ate", "", false, 9]);
+
+// 16
+
+function getIndexToIns(arr, num) {
+	let sortedArr = arr.sort((a,b) => a-b)
+	let indexAns = sortedArr.findIndex(t => t > num)
+	if (indexAns === -1) {
+		return arr.length
+	} else {
+		return indexAns;
+	}
+
+}
+
+console.log(getIndexToIns([2, 5, 10], 15))
