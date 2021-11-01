@@ -1,12 +1,9 @@
-function getIndexToIns(arr, num) {
-	let sortedArr = arr.sort((a,b) => a-b)
-	let indexAns = sortedArr.findIndex(t => t > num)
-	if (indexAns === -1) {
-		return arr.length
-	} else {
-		return indexAns;
+function mutation(arr) {
+	let test = arr[1].toLowerCase();
+	let target = arr[0].toLowerCase();
+	for (let i = 0; i < test.length; i++) {
+		if (target.indexOf(test[i]) < 0) return false;
 	}
-
+	return true;
 }
-
-console.log(getIndexToIns([2, 5, 10], 15))
+console.log(mutation(["hello", "hello"]))
